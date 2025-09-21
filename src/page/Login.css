@@ -1,0 +1,350 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .login-container {
+     font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+         "Yu Gothic Medium", "Meiryo", "MS Gothic", sans-serif;
+     min-height: 100vh;
+     min-width: 1300px;
+     background: url("../assets/main-bg.png") lightgray 50% / cover no-repeat;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .main-wrapper {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     z-index: 10;
+     width: 100%;
+     max-width: 486px;
+ }
+
+ .brand-header {
+     text-align: center;
+     margin-bottom: 60px;
+     animation: fadeIn 0.8s ease-out;
+ }
+
+ .brand-title {
+     font-size: 48px;
+     aspect-ratio: 604.59/60.00;
+     font-weight: 800;
+     color: white;
+     letter-spacing: 2px;
+     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 8px;
+     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.548));
+     line-height: 120%;
+     font-weight: 700;
+ }
+
+ .brand-highlight {
+     color: white;
+     font-size: 40px;
+     transform: rotate(15deg);
+     display: inline-block;
+ }
+
+ .brand-subtitle {
+     color: #FFF;
+     text-align: center;
+     text-shadow: 0 0 3px rgba(255, 255, 255, 0.70);
+     font-family: "Noto Sans JP";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     letter-spacing: 1.6px;
+ }
+
+ .login-card {
+     padding: 45px 70px;
+     width: 100%;
+     max-width: 486px;
+     position: relative;
+     animation: slideUp 0.6s ease-out;
+     border-radius: 27px;
+     border: 2px solid rgba(199, 216, 255, 0.35);
+     background: linear-gradient(286deg, rgba(22, 44, 145, 0.27) 4.29%, rgba(63, 196, 242, 0.27) 95.7%);
+     box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.07);
+ }
+
+ .brand-logo-light-border-top {
+     position: absolute;
+     z-index: 11111;
+     right: 15px;
+     top: -17px;
+     width: 202.6px;
+     height: 20.06px;
+     flex-shrink: 0;
+ }
+
+
+ .brand-logo-light-border-bottom {
+     position: absolute;
+     z-index: 11111;
+     left: 15px;
+     bottom: -3px;
+     width: 202.6px;
+     height: 20.06px;
+     flex-shrink: 0;
+ }
+
+
+ .form-header {
+     text-align: center;
+     margin-bottom: 30px;
+ }
+
+ .form-title {
+     color: #FFF;
+     font-feature-settings: 'palt' on;
+     font-family: "Noto Sans JP";
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     letter-spacing: 2px;
+ }
+
+ .login-form-container {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .login-form {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+ }
+
+ .input-group {
+     display: flex;
+     flex-direction: column;
+     letter-spacing: 1.4px;
+ }
+
+ .form-input {
+     font-feature-settings: 'palt' on;
+     font-family: "Noto Sans JP";
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     display: flex;
+     width: 100%;
+     padding: 11px 15px;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 2px;
+     border: none;
+     outline: none;
+     background: #FFF;
+     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.27);
+     border: 2px solid transparent;
+ }
+
+ .form-input:hover {
+     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.27);
+ }
+
+ .form-input:focus {
+     outline: none;
+     outline-offset: 2px;
+     border-radius: 2px;
+     border: 2px solid #22BAD2;
+     background: #FFF;
+     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.27);
+ }
+
+ .form-input::placeholder {
+     color: #9ca3af;
+ }
+
+ .password-container {
+     position: relative;
+     display: flex;
+     align-items: center;
+ }
+
+ .password-input {
+     font-feature-settings: 'palt' on;
+     font-family: "Noto Sans JP";
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     letter-spacing: 1.4px;
+     display: flex;
+     width: 100%;
+     padding: 11px 15px;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 2px;
+     border: none;
+     outline: none;
+     background: #FFF;
+     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.27);
+     border: 2px solid transparent;
+ }
+
+ .password-input:hover {
+     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.27);
+
+ }
+
+ .password-input:focus {
+     outline: none;
+     outline-offset: 2px;
+     border-radius: 2px;
+     border: 2px solid #22BAD2;
+     background: #FFF;
+     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.27);
+ }
+
+ .password-input::placeholder {
+     color: #9ca3af;
+ }
+
+ .eye-button {
+     position: absolute;
+     right: 16px;
+     background: transparent;
+     border: none;
+     cursor: pointer;
+     padding: 8px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 6px;
+     transition: all 0.2s ease;
+     color: #9ca3af;
+     font-size: 16px;
+ }
+
+ .eye-button:hover {
+     background-color: rgba(156, 163, 175, 0.1);
+     color: #6b7280;
+ }
+
+ .eye-button:focus {
+     outline: 2px solid rgba(59, 130, 246, 0.5);
+     outline-offset: 2px;
+ }
+
+ .login-button {
+     text-align: center;
+     margin-top: 25px;
+     color: #FFF;
+     font-feature-settings: 'palt' on;
+     font-family: "Noto Sans JP";
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     letter-spacing: 1.4px;
+     display: flex;
+     padding: 11px 118px;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     align-self: stretch;
+     border-radius: 27px;
+     background: #022291;
+     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.27);
+     border: none;
+     outline: none;
+     cursor: pointer;
+     transition: all 0.5s ease;
+ }
+
+ .login-button:hover {
+     box-shadow: 0 12px 35px rgba(30, 64, 175, 0.5),
+         inset 0 1px 0 rgba(255, 255, 255, 0.3),
+         inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+     background: linear-gradient(15deg,
+             rgba(30, 64, 175, 1) 0%,
+             rgba(37, 99, 235, 0.95) 100%);
+     border-color: rgba(255, 255, 255, 0.4);
+ }
+
+ .login-button:active {
+     transform: translateY(0);
+ }
+
+ .login-button:focus {
+     outline: 2px solid rgba(59, 130, 246, 0.5);
+     outline-offset: 2px;
+     outline: none;
+ }
+
+
+ /* Responsive Design */
+ @media (max-width: 640px) {
+     .brand-title {
+         font-size: 36px;
+     }
+
+     .login-card {
+         padding: 32px 24px;
+         margin: 16px;
+     }
+
+     .form-title {
+         font-size: 20px;
+     }
+
+     .brand-header {
+         margin-bottom: 40px;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .brand-title {
+         font-size: 28px;
+     }
+
+     .brand-subtitle {
+         font-size: 14px;
+     }
+
+     .login-card {
+         padding: 24px 20px;
+     }
+ }
+
+ /* Animations */
+ @keyframes slideUp {
+     from {
+         opacity: 0;
+         transform: translateY(30px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(-20px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
